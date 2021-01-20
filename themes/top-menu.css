@@ -1,0 +1,35 @@
+    /* Header section */
+    .header-wrapper {
+        position: fixed;
+        display: flex;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: auto;
+        color: #FFC000;
+        background-color: #003E00;
+        font-family: 'TradeGothicLTStd-BdCn20', Helvetica, Arial, sans-serif !important;
+        border-bottom: 4px solid #FFC000;
+
+    }
+
+    .header-links {
+        float: right;
+    }
+
+    .header-links > .link-btn{
+        float: right;
+        padding-top: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .header-links > .link-btn> a{
+        color: #FFC000;    
+    }
+
+   .erin-logo {
+        max-height: 75px;
+    }
+    

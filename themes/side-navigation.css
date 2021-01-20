@@ -1,0 +1,100 @@
+/*------------------------------------------------------------------
+Primary use:    side-navigation.css file used for styling components
+                inside side-navigation bar
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Layout]
+-------------------------------------------------------------------*/
+
+#active-page {
+    background-color: #003E00;
+}
+
+#active-page>a {
+    color: #FFC000;
+}
+
+.hover-highlight:hover {
+    background-color: #003E00;
+    color:#FFC000;
+}
+
+.hover-highlight:hover>a {
+    background-color: inherit;
+    color: inherit;
+}
+
+.hover-highlight:hover>#sub-navigation-bar {
+    background-color:#FFC000;
+    color: #003E00;
+}
+
+.navigation-items {
+    border-bottom: 2px solid #909090;
+    color: #003E00;
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.expanded-navigation-item {
+    border-bottom: 2px solid #909090;
+    color: #003E00;
+    list-style-type: none;
+}
+
+.navigation-items>a, .first-sub-navigation-item>a, .last-sub-navigation-item>a, #expanded-navigation-item>a, .sub-navigation-items>a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+#navigation-bar {
+    list-style-type: none;
+    font-family: 'PublicSans', sans-serif!important;
+    font-size: 20px;
+    padding-bottom: 30px;
+    position: sticky;
+    top: 105px;
+}
+
+#sub-navigation-bar {
+    list-style-type: none;
+    text-transform: none;
+    text-transform: capitalize;
+}
+
+.first-sub-navigation-item {
+    color: #003E00;
+    padding: 10px 10px 10px 30px;
+}
+
+.last-sub-navigation-item {
+    color: #003E00;
+    padding: 10px 10px 10px 30px;
+    border-top: 2px solid #909090;
+}
+
+.sub-navigation-items {
+    color: #003E00;
+    padding: 10px 10px 10px 30px;
+    border-top: 2px solid #909090;
+}
+
+@media only screen and (min-width: 768px) {
+    #navigation-bar {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #navigation-bar {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #navigation-bar {
+        margin-left: 6%;
+    }
+}
